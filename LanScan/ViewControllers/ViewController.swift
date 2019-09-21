@@ -8,7 +8,6 @@
 
 import UIKit
 import MMLanScan
-import Hostess
 
 class ViewController: UIViewController {
 

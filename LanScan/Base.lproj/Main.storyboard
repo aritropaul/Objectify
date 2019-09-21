@@ -10,7 +10,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="LanScan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Objectify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,11 +33,11 @@
                                 <color key="textColor" red="0.29803921570000003" green="0.062745098040000002" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ezz-WY-HMq">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ezz-WY-HMq">
                                 <rect key="frame" x="30" y="230" width="354" height="602"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="SYf-fc-myi">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="deviceCell" id="SYf-fc-myi" customClass="DeviceTableViewCell" customModule="Objectify" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="354" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SYf-fc-myi" id="ysj-WX-xAe">
@@ -66,19 +66,19 @@
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HWT-Ha-6Rf">
-                                                            <rect key="frame" x="15" y="72" width="182" height="28"/>
+                                                            <rect key="frame" x="15" y="64" width="204" height="36"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulg-pA-rxZ">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="86" height="28"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="97" height="36"/>
                                                                     <color key="backgroundColor" red="0.29803921570000003" green="0.062745098040000002" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
-                                                                    <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                                                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="11" maxY="10"/>
                                                                     <state key="normal" title="S E R V I C E">
                                                                         <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
                                                                     </state>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ge6-ar-NNu">
-                                                                    <rect key="frame" x="96" y="0.0" width="86" height="28"/>
+                                                                    <rect key="frame" x="107" y="0.0" width="97" height="36"/>
                                                                     <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                                     <state key="normal" title="E D I T">
@@ -112,6 +112,14 @@
                                                 <constraint firstItem="gpu-8X-UdG" firstAttribute="leading" secondItem="ysj-WX-xAe" secondAttribute="leading" constant="5" id="nml-gc-ila"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="backView" destination="gpu-8X-UdG" id="7mU-br-Y3J"/>
+                                            <outlet property="deviceImageView" destination="XUh-Pe-onc" id="98t-e5-zGM"/>
+                                            <outlet property="deviceNameLabel" destination="a2g-a1-IWP" id="Db4-WV-7kv"/>
+                                            <outlet property="deviceTypeLabel" destination="qhU-uS-h6r" id="U2e-PU-w7K"/>
+                                            <outlet property="editButton" destination="Ge6-ar-NNu" id="j6E-JX-l2P"/>
+                                            <outlet property="serviceButton" destination="ulg-pA-rxZ" id="JP3-3z-jZW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

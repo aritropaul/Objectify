@@ -11,12 +11,14 @@
 		306C6D392336A4FF006124EC /* ifaddrs.h in Headers */ = {isa = PBXBuildFile; fileRef = 306C6D352336A4FF006124EC /* ifaddrs.h */; };
 		306C6D3A2336A4FF006124EC /* ifaddrs.h in Headers */ = {isa = PBXBuildFile; fileRef = 306C6D372336A4FF006124EC /* ifaddrs.h */; };
 		306C6D512336C045006124EC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C6D502336C045006124EC /* HomeViewController.swift */; };
+		306C6D542336C2FD006124EC /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C6D532336C2FD006124EC /* DeviceTableViewCell.swift */; };
 		30B3C51F23369C2800E64372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B3C51E23369C2800E64372 /* AppDelegate.swift */; };
 		30B3C52123369C2800E64372 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B3C52023369C2800E64372 /* SceneDelegate.swift */; };
 		30B3C52323369C2800E64372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B3C52223369C2800E64372 /* ViewController.swift */; };
 		30B3C52623369C2800E64372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B3C52423369C2800E64372 /* Main.storyboard */; };
 		30B3C52823369C2B00E64372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B3C52723369C2B00E64372 /* Assets.xcassets */; };
 		30B3C52B23369C2B00E64372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B3C52923369C2B00E64372 /* LaunchScreen.storyboard */; };
+		30BC91372336C75500D5E753 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BC91362336C75500D5E753 /* Extensions.swift */; };
 		79AEBA16F7A1E1DDDBF6B092 /* Pods_LanScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D91121C3FB3F2016F00A06 /* Pods_LanScan.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,7 @@
 		306C6D352336A4FF006124EC /* ifaddrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ifaddrs.h; sourceTree = "<group>"; };
 		306C6D372336A4FF006124EC /* ifaddrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ifaddrs.h; sourceTree = "<group>"; };
 		306C6D502336C045006124EC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		306C6D532336C2FD006124EC /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
 		30B3C51B23369C2800E64372 /* Objectify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Objectify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B3C51E23369C2800E64372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30B3C52023369C2800E64372 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		30B3C52723369C2B00E64372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30B3C52A23369C2B00E64372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30B3C52C23369C2B00E64372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30BC91362336C75500D5E753 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D93AE7BAE9BBDBB7319C60B8 /* Pods-LanScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LanScan.debug.xcconfig"; path = "Target Support Files/Pods-LanScan/Pods-LanScan.debug.xcconfig"; sourceTree = "<group>"; };
 		F8136C8A846B4463C1163F59 /* Pods-LanScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LanScan.release.xcconfig"; path = "Target Support Files/Pods-LanScan/Pods-LanScan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +97,14 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		306C6D552336C301006124EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				306C6D532336C2FD006124EC /* DeviceTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		30B3C51223369C2800E64372 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +126,8 @@
 		30B3C51D23369C2800E64372 /* LanScan */ = {
 			isa = PBXGroup;
 			children = (
+				30BC91382336C75900D5E753 /* Utils */,
+				306C6D552336C301006124EC /* Views */,
 				306C6D522336C0B2006124EC /* ViewControllers */,
 				306C6D312336A4FF006124EC /* Headers */,
 				30B3C51E23369C2800E64372 /* AppDelegate.swift */,
@@ -124,6 +138,14 @@
 				30B3C52C23369C2B00E64372 /* Info.plist */,
 			);
 			path = LanScan;
+			sourceTree = "<group>";
+		};
+		30BC91382336C75900D5E753 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				30BC91362336C75500D5E753 /* Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		59FBE198176EC7CF88D45DC5 /* Frameworks */ = {
@@ -272,6 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306C6D542336C2FD006124EC /* DeviceTableViewCell.swift in Sources */,
+				30BC91372336C75500D5E753 /* Extensions.swift in Sources */,
 				30B3C52323369C2800E64372 /* ViewController.swift in Sources */,
 				30B3C51F23369C2800E64372 /* AppDelegate.swift in Sources */,
 				30B3C52123369C2800E64372 /* SceneDelegate.swift in Sources */,
