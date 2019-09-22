@@ -22,6 +22,8 @@ class DeviceTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        backView.makeCard()
+        backView.layer.cornerRadius = 12
         serviceButton.layer.cornerRadius = 8
         editButton.layer.cornerRadius = 8
     }

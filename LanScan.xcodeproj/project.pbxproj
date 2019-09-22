@@ -19,6 +19,8 @@
 		30B3C52823369C2B00E64372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B3C52723369C2B00E64372 /* Assets.xcassets */; };
 		30B3C52B23369C2B00E64372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B3C52923369C2B00E64372 /* LaunchScreen.storyboard */; };
 		30BC91372336C75500D5E753 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BC91362336C75500D5E753 /* Extensions.swift */; };
+		30BC913A2336C93900D5E753 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BC91392336C93900D5E753 /* ScannerViewController.swift */; };
+		30BC91402336D06500D5E753 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 30BC913E2336D06500D5E753 /* Resnet50.mlmodel */; };
 		79AEBA16F7A1E1DDDBF6B092 /* Pods_LanScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D91121C3FB3F2016F00A06 /* Pods_LanScan.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		30B3C52A23369C2B00E64372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30B3C52C23369C2B00E64372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30BC91362336C75500D5E753 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		30BC91392336C93900D5E753 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		30BC913E2336D06500D5E753 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = ../../../../../../Downloads/Resnet50.mlmodel; sourceTree = "<group>"; };
 		D93AE7BAE9BBDBB7319C60B8 /* Pods-LanScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LanScan.debug.xcconfig"; path = "Target Support Files/Pods-LanScan/Pods-LanScan.debug.xcconfig"; sourceTree = "<group>"; };
 		F8136C8A846B4463C1163F59 /* Pods-LanScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LanScan.release.xcconfig"; path = "Target Support Files/Pods-LanScan/Pods-LanScan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +95,7 @@
 		306C6D522336C0B2006124EC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				30BC91392336C93900D5E753 /* ScannerViewController.swift */,
 				306C6D502336C045006124EC /* HomeViewController.swift */,
 				30B3C52223369C2800E64372 /* ViewController.swift */,
 			);
@@ -143,6 +148,7 @@
 		30BC91382336C75900D5E753 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				30BC913E2336D06500D5E753 /* Resnet50.mlmodel */,
 				30BC91362336C75500D5E753 /* Extensions.swift */,
 			);
 			path = Utils;
@@ -294,6 +300,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30BC913A2336C93900D5E753 /* ScannerViewController.swift in Sources */,
+				30BC91402336D06500D5E753 /* Resnet50.mlmodel in Sources */,
 				306C6D542336C2FD006124EC /* DeviceTableViewCell.swift in Sources */,
 				30BC91372336C75500D5E753 /* Extensions.swift in Sources */,
 				30B3C52323369C2800E64372 /* ViewController.swift in Sources */,
